@@ -14,10 +14,7 @@ export const getRockets = createAsyncThunk('rockets/getRockets', async (_, thunk
 });
 
 const initialState = {
-  id: '',
-  name: '',
-  description: '',
-  image: '',
+  rocketArray: [],
   isLoading: false,
   error: null,
 };
@@ -31,10 +28,15 @@ const rocketSlice = createSlice({
         state.isLoading = true;
       })
       .addCase(getRockets.fulfilled, (state, action) => {
-        state.id = action.payload.id;
-        state.name = action.payload.name;
-        state.description = action.payload.description;
-        [state.image] = action.payload.flickr_images;
+        action.payload.forEach((load) => {
+          const rocket = {
+            id: load.id,
+            name: load.name,
+            description: load.description,
+            image: load.flickr_images[0],
+          };
+          state.rocketArray.push(rocket);
+        });
         state.isLoading = false;
       })
       .addCase(getRockets.rejected, (state, action) => {
