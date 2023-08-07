@@ -3,18 +3,18 @@ import PropTypes from 'prop-types';
 const Rocket = ({
   id, name, description, image,
 }) => (
-  <article className="rocket, row">
-    <div>
+  <div className="rockets row">
+    <div className="rocketPic">
       <img src={image} alt={name} />
     </div>
-    <div>
+    <div className="details column">
       <h4>{name}</h4>
       <p>{description}</p>
       <button type="button" id={id}>
         Reserve Rocket
       </button>
     </div>
-  </article>
+  </div>
 );
 
 Rocket.propTypes = {

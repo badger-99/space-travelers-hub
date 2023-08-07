@@ -24,3 +24,28 @@ li {
 .active {
   text-decoration: underline;
 }
+
+.rockets{
+  align-items: center baseline;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  /* padding: 0.5rem; */
+}
+
+.rocketPic img {
+  width: 15rem;
+}
+
+.details {
+  gap: 0.7rem;
+  max-width: 50rem;
+}
+
+.details button {
+  width: fit-content;
+  padding: 0.3rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5%;
+}
