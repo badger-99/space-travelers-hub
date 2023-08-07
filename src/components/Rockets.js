@@ -12,6 +12,16 @@ const Rockets = () => {
     dispatch(getRockets());
   }, []);
 
+  if (isLoading) {
+    return <h1 id="loading">Loading...</h1>;
+  }
+
+  if (error) {
+    return <h1>{error}</h1>;
+  }
+
+  console.log(rocketArray);
+
   return (
     <h1>Rockets</h1>
   );
