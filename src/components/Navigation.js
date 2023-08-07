@@ -12,9 +12,6 @@ const Navigation = () => {
           <NavLink className="link" to="/"> Rockets</NavLink>
         </li>
         <li>
-          <NavLink className="link" to="/placeholder"> placeholder</NavLink>
-        </li>
-        <li>
           <NavLink className="link" to="/my_profile"> My Profile</NavLink>
         </li>
       </ul>
