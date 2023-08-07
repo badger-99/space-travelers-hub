@@ -1,9 +1,13 @@
 import Placeholder from './components/placeholder';
 import './App.css';
+import Navigation from './components/Navigation';
 
 function App() {
   return (
-    <Placeholder />
+    <>
+      <Navigation />
+      <Placeholder />
+    </>
   );
 }
 
