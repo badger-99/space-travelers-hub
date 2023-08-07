@@ -12,3 +12,36 @@ export const getRockets = createAsyncThunk('rockets/getRockets', async (_, thunk
     return thunkAPI.rejectWithValue(errorMsg);
   }
 });
+
+const initialState = {
+  id: '',
+  name: '',
+  description: '',
+  image: '',
+  isLoading: false,
+  error: null,
+};
+
+const rocketSlice = createSlice({
+  name: 'rockets',
+  initialState,
+  extraReducers: (builder) => {
+    builder
+      .addCase(getRockets.pending, (state) => {
+        state.isLoading = true;
+      })
+      .addCase(getRockets.fulfilled, (state, action) => {
+        state.id = action.payload.id;
+        state.name = action.payload.name;
+        state.description = action.payload.description;
+        [state.image] = action.payload.flickr_images;
+        state.isLoading = false;
+      })
+      .addCase(getRockets.rejected, (state, action) => {
+        state.error = action.payload;
+        state.isLoading = false;
+      });
+  },
+});
+
+export default rocketSlice.reducer;
