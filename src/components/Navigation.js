@@ -9,7 +9,10 @@ const Navigation = () => {
       <h1>{heading}</h1>
       <ul className="navLinks row">
         <li>
-          <NavLink className="link" to="/"> placeholder</NavLink>
+          <NavLink className="link" to="/"> Rockets</NavLink>
+        </li>
+        <li>
+          <NavLink className="link" to="/placeholder"> placeholder</NavLink>
         </li>
         <li>
           <NavLink className="link" to="/my_profile"> My Profile</NavLink>
