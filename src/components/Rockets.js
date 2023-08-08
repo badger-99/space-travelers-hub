@@ -1,10 +1,19 @@
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { getRockets } from '../redux/rockets/rocketSlice';
 import Rocket from './Rocket';
 
 const Rockets = () => {
   const {
     rocketArray, isLoading, error,
   } = useSelector((store) => store.rockets);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (rocketArray.length === 0) {
+      dispatch(getRockets());
+    }
+  }, []);
 
   if (isLoading) {
     return <h1 id="loading">Loading...</h1>;
