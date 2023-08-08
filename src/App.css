@@ -98,6 +98,11 @@ table th {
   border: 1px solid black;
 }
 
+.leave-button {
+  color: red;
+  border: 1px solid red;
+}
+
 #my-profile {
   padding: 0 2rem;
 }
