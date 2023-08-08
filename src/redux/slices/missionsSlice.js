@@ -7,9 +7,6 @@ const missionsSlice = createSlice({
   initialState: [],
   extraReducers: (builder) => {
     builder.addCase(fetchMissions.fulfilled, (state, action) => {
-      // mission_id
-      // mission_name
-      // description
       const { payload } = action;
       const newMissions = payload.map((mission) => {
         const newMission = {
