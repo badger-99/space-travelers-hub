@@ -52,10 +52,9 @@ li {
 }
 
 .rocket {
-  align-items: center baseline;
+  align-items: center;
   gap: 1rem;
   margin-bottom: 1rem;
-  /* padding: 0.5rem; */
 }
 
 .rocketPic img {
