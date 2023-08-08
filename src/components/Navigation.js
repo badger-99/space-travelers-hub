@@ -12,6 +12,9 @@ const Navigation = () => {
           <NavLink className="link" to="/"> Rockets</NavLink>
         </li>
         <li>
+          <NavLink className="link" to="/missions"> Missions</NavLink>
+        </li>
+        <li>
           <NavLink className="link" id="profile" to="/my_profile"> My Profile</NavLink>
         </li>
       </ul>
