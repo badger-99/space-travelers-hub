@@ -5,7 +5,6 @@ import MyProfile from './components/MyProfile';
 import Rockets from './components/Rockets';
 import Missions from './pages/Missions';
 
-
 const App = () => (
   <>
     <Navigation />
