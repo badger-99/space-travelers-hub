@@ -6,10 +6,20 @@ const missionsSlice = createSlice({
   reducers: {
     joinMission: (state, action) => {
       const id = action.payload;
+
       const newState = state.map((mission) => {
-        if (mission.mission_id !== id) { return mission; }
-        return { ...mission, reserved: true };
+        let { reserved } = mission; // Default value
+
+        if (mission.mission_id === id) {
+          reserved = !mission.reserved;
+          if (typeof mission.reserved === 'undefined') {
+            reserved = true;
+          }
+        }
+
+        return { ...mission, reserved };
       });
+
       return newState;
     },
   },
