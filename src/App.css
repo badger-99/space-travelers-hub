@@ -68,10 +68,19 @@ li {
 .details button {
   width: fit-content;
   padding: 0.3rem;
+  border-radius: 5%;
+}
+
+.reserveBtn {
   background: #007bff;
   color: white;
   border: none;
-  border-radius: 5%;
+}
+
+.cancelBtn {
+  background: inherit;
+  color: #868686;
+  border: 1.5px solid #868686;
 }
 
 table td,
