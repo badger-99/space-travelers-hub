@@ -97,3 +97,16 @@ table td,
 table th {
   border: 1px solid black;
 }
+
+#my-profile {
+  padding: 0 2rem;
+}
+
+#reservedRockets {
+  padding: 0;
+}
+
+#reservedRockets li{
+  border: 1.5px solid #868686;
+  padding: 1rem;
+}
