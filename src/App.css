@@ -79,3 +79,8 @@ table td,
 table th {
   border: 1px solid black;
 }
+
+.leave-button {
+  color: red;
+  border: 1px solid red;
+}

@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import rocketReducer from './rockets/rocketSlice';
 
-import { missionsReducer } from './slices/missionsSlice';
+import { missionsReducer, joinMission } from './slices/missionsSlice';
 
 const store = configureStore({
   reducer: {
@@ -11,4 +11,4 @@ const store = configureStore({
 });
 
 export * from './thunks/fetchMissionsThunk';
-export default store;
+export { joinMission, store };
