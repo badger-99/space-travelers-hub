@@ -8,8 +8,25 @@
   flex-direction: column;
 }
 
+nav {
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 2px solid #e8e8e8;
+  margin-bottom: 1rem;
+}
+
+nav img {
+  width: 3.5rem;
+  margin-right: 1rem;
+}
+
+nav h1 {
+  font-size: 2rem;
+}
+
 .navLinks {
   gap: 1rem;
+  margin-left: auto;
 }
 
 li {
@@ -17,7 +34,7 @@ li {
 }
 
 .link {
-  color: inherit;
+  color: #007bff;
   text-decoration: none;
 }
 
@@ -25,7 +42,13 @@ li {
   text-decoration: underline;
 }
 
-.rockets{
+#profile {
+  padding-left: 1rem;
+  border-left: 3px solid #a6a6a6;
+}
+
+
+
   align-items: center baseline;
   gap: 1rem;
   margin-bottom: 1rem;
