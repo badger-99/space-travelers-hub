@@ -17,9 +17,8 @@ const Rocket = ({
           {reserved && <span className="reserved">Reserved</span>}
           {description}
         </p>
-        <button className={reserved ? 'cancelBtn' : 'reserveBtn'} type="button" id={id} onClick={() => dispatch(toggleReservation(id))}>
-          <span>{ reserved ? 'Cancel  Reservation' : 'Reserve Rocket' }</span>
-        </button>
+        {reserved && <button className="cancelBtn" type="button" onClick={() => dispatch(toggleReservation(id))}>Cancel Reservation</button> }
+        {!reserved && <button className="reserveBtn" type="button" onClick={() => dispatch(toggleReservation(id))}>Reserve Rocket</button> }
       </div>
     </div>
   );
