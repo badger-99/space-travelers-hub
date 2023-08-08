@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const Rocket = ({
   id, name, description, image,
 }) => (
-  <div className="rockets row">
+  <div className="rocket row">
     <div className="rocketPic">
       <img src={image} alt={name} />
     </div>

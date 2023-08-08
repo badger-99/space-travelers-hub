@@ -47,8 +47,11 @@ li {
   border-left: 3px solid #a6a6a6;
 }
 
+#rockets{
+  padding: 0 2rem;
+}
 
-
+.rocket{
   align-items: center baseline;
   gap: 1rem;
   margin-bottom: 1rem;

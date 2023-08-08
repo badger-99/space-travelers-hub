@@ -15,7 +15,7 @@ const Rockets = () => {
   }
 
   return (
-    <section>
+    <section id="rockets">
       {rocketArray.map((rocket) => (
         <Rocket
           key={rocket.id}
