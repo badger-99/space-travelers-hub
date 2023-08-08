@@ -30,9 +30,12 @@ const ListItems = () => {
 
           {missions.map((mission) => (
             <tr key={mission.mission_id}>
-              <td>{mission.mission_name}</td>
+              <th>{mission.mission_name}</th>
               <td>{mission.description}</td>
-              <td>NOT A MEMBER</td>
+              <td>
+                {' '}
+                <span>{mission.reserved ? 'Active Member' : 'NOT A MEMBER'}</span>
+              </td>
               <td>
                 <button
                   type="button"

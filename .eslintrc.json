@@ -28,7 +28,8 @@
     "react/no-array-index-key": "off",
     "no-param-reassign": "off",
     "camelcase": "off",
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "max-len": "off"
   },
   "overrides": [
     {
