@@ -16,7 +16,6 @@ const MyProfile = () => {
           </tr>
         </thead>
         <tbody>
-          {console.log(reservedMissions)}
           {reservedMissions.length > 0 ? (
             reservedMissions.map((mission) => (
               <tr key={mission.mission_id}>
