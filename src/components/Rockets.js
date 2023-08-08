@@ -14,8 +14,6 @@ const Rockets = () => {
     return <h1>{error}</h1>;
   }
 
-  console.log(rocketArray);
-
   return (
     <section>
       {rocketArray.map((rocket) => (
