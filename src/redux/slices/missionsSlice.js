@@ -3,7 +3,16 @@ import { fetchMissions } from '../thunks/fetchMissionsThunk';
 
 const missionsSlice = createSlice({
   name: 'Missions',
-  reducers: {},
+  reducers: {
+    joinMission: (state, action) => {
+      const id = action.payload;
+      const newState = state.map((mission) => {
+        if (mission.mission_id !== id) { return mission; }
+        return { ...mission, reserved: true };
+      });
+      return newState;
+    },
+  },
   initialState: [],
   extraReducers: (builder) => {
     builder.addCase(fetchMissions.fulfilled, (state, action) => {
@@ -22,4 +31,5 @@ const missionsSlice = createSlice({
   },
 });
 
+export const { joinMission } = missionsSlice.actions;
 export const missionsReducer = missionsSlice.reducer;

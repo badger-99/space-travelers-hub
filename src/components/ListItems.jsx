@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Table from 'react-bootstrap/Table';
-import { fetchMissions } from '../redux/store';
+import { fetchMissions, joinMission } from '../redux/store';
 
 const ListItems = () => {
   const dispatch = useDispatch();
@@ -32,8 +32,18 @@ const ListItems = () => {
             <tr key={mission.mission_id}>
               <td>{mission.mission_name}</td>
               <td>{mission.description}</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
+              <td>NOT A MEMBER</td>
+              <td>
+                <button
+                  type="button"
+                  className={mission.reserved ? 'leave-button' : 'join-button'}
+                  onClick={() => dispatch(joinMission(mission.mission_id))}
+                >
+                  {' '}
+                  <span>{mission.reserved ? 'Leave Mission' : 'Join Mission'}</span>
+                </button>
+
+              </td>
 
             </tr>
           ))}
