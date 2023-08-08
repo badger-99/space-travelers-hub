@@ -1,9 +1,9 @@
-.row {
+.flexRow {
   display: flex;
   flex-direction: row;
 }
 
-.column {
+.flexCol {
   display: flex;
   flex-direction: column;
 }
@@ -48,21 +48,20 @@ li {
 }
 
 #rockets {
-  padding: 0 2rem;
+  padding: 0 2rem 5rem;
+  gap: 2rem;
 }
 
 .rocket {
-  align-items: center;
   gap: 1rem;
-  margin-bottom: 1rem;
 }
 
 .rocketPic img {
-  width: 15rem;
+  width: 17rem;
 }
 
 .details {
-  gap: 0.7rem;
+  gap: 0.25rem;
   max-width: 50rem;
 }
 

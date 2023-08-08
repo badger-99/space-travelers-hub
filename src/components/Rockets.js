@@ -24,7 +24,7 @@ const Rockets = () => {
   }
 
   return (
-    <section id="rockets">
+    <section className="flexCol" id="rockets">
       {rocketArray.map((rocket) => (
         <Rocket
           key={rocket.id}
