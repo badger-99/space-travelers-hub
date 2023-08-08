@@ -13,7 +13,10 @@ const Rocket = ({
       </div>
       <div className="details flexCol">
         <h4>{name}</h4>
-        <p>{description}</p>
+        <p>
+          {reserved && <span className="reserved">Reserved</span>}
+          {description}
+        </p>
         <button className={reserved ? 'cancelBtn' : 'reserveBtn'} type="button" id={id} onClick={() => dispatch(toggleReservation(id))}>
           <span>{ reserved ? 'Cancel  Reservation' : 'Reserve Rocket' }</span>
         </button>

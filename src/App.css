@@ -71,6 +71,16 @@ li {
   border-radius: 5%;
 }
 
+.reserved {
+  color: #fff;
+  background: #0caaaa;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-right: 0.4rem;
+  padding: 0.2rem 0.3rem;
+  border-radius: 5%;
+}
+
 .reserveBtn {
   background: #007bff;
   color: white;
