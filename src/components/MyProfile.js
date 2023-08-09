@@ -8,10 +8,8 @@ const MyProfile = () => {
   });
   const reservedMissions = useMemo(() => missions.filter((mission) => mission.reserved), [missions]);
 
-  const reservedRockets = useSelector((store) => {
-    const rockets = store.rockets.filter((rocket) => rocket.isReserved);
-    return rockets;
-  });
+  const { rocketArray } = useSelector((store) => store.rockets);
+  const reservedRockets = rocketArray.filter((rocket) => rocket.isReserved);
 
   return (
     <section id="my-profile">
