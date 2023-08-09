@@ -1,13 +1,13 @@
-import { MemoryRouter } from "react-router";
-import Navigation from "./Navigation";
-import { render } from "@testing-library/react";
+import { MemoryRouter } from 'react-router';
+import { render } from '@testing-library/react';
+import Navigation from './Navigation';
 
 test('snapshot of nav bar', () => {
   const nav = render(
     <MemoryRouter>
       <Navigation />
-    </MemoryRouter>
-  )
+    </MemoryRouter>,
+  );
 
   expect(nav).toMatchSnapshot();
-})
+});

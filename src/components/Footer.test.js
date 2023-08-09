@@ -1,12 +1,12 @@
 import { MemoryRouter } from 'react-router';
-import Footer from './Footer';
 import { render } from '@testing-library/react';
+import Footer from './Footer';
 
 test('snapshot of nav bar', () => {
   const footer = render(
     <MemoryRouter>
       <Footer />
-    </MemoryRouter>
+    </MemoryRouter>,
   );
 
   expect(footer).toMatchSnapshot();

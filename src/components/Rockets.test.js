@@ -1,18 +1,17 @@
 /**
  * @jest-environment jsdom
 */
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { store } from '../redux/store';
 import Rockets from './Rockets';
 
 describe('testing the rocket page rendering', () => {
-  
   test('snapshot of loading message shown during API call', () => {
     const rocketArray = [];
     const isLoading = true;
     const error = null;
-    
+
     const loading = render(
       <Provider store={store}>
         <Rockets
