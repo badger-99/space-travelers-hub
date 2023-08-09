@@ -22,6 +22,18 @@ const initialState = {
 const rocketSlice = createSlice({
   name: 'rockets',
   initialState,
+  reducers: {
+    toggleReservation: (state, action) => {
+      const targetId = action.payload;
+      state.rocketArray = state.rocketArray.map((rocket) => {
+        if (rocket.id === targetId) {
+          rocket.isReserved = !rocket.isReserved;
+          return rocket;
+        }
+        return rocket;
+      });
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(getRockets.pending, (state) => {
@@ -34,6 +46,7 @@ const rocketSlice = createSlice({
             name: load.name,
             description: load.description,
             image: load.flickr_images[0],
+            isReserved: false,
           };
           state.rocketArray.push(rocket);
         });
@@ -45,5 +58,7 @@ const rocketSlice = createSlice({
       });
   },
 });
+
+export const { toggleReservation } = rocketSlice.actions;
 
 export default rocketSlice.reducer;

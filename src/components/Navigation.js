@@ -4,10 +4,10 @@ import logo from '../assets/logo.png';
 const Navigation = () => {
   const heading = "Space Traveler's Hub";
   return (
-    <nav className="row">
+    <nav className="flexRow">
       <img src={logo} alt="planet logo" />
       <h1>{heading}</h1>
-      <ul className="navLinks row">
+      <ul className="navLinks flexRow">
         <li>
           <NavLink className="link" to="/"> Rockets</NavLink>
         </li>

@@ -13,7 +13,7 @@ const Rockets = () => {
     if (rocketArray.length === 0) {
       dispatch(getRockets());
     }
-  }, []);
+  }, [dispatch, rocketArray]);
 
   if (isLoading) {
     return <h1 id="loading">Loading...</h1>;
@@ -24,7 +24,7 @@ const Rockets = () => {
   }
 
   return (
-    <section id="rockets">
+    <section className="flexCol" id="rockets">
       {rocketArray.map((rocket) => (
         <Rocket
           key={rocket.id}
@@ -32,6 +32,7 @@ const Rockets = () => {
           name={rocket.name}
           description={rocket.description}
           image={rocket.image}
+          reserved={rocket.isReserved}
         />
       ))}
     </section>

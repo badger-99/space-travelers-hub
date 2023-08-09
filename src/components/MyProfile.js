@@ -7,8 +7,14 @@ const MyProfile = () => {
     return reservedMissions;
   });
   const reservedMissions = useMemo(() => missions.filter((mission) => mission.reserved), [missions]);
+
+  const reservedRockets = useSelector((store) => {
+    const rockets = store.rockets.filter((rocket) => rocket.isReserved);
+    return rockets;
+  });
+
   return (
-    <>
+    <section id="my-profile">
       <table>
         <thead>
           <tr>
@@ -29,7 +35,13 @@ const MyProfile = () => {
           )}
         </tbody>
       </table>
-    </>
+      <div id="my-rockets">
+        <h2>My Rockets</h2>
+        <ul id="reservedRockets">
+          {reservedRockets.map((rocket) => (<li key={rocket.id}>{rocket.name}</li>))}
+        </ul>
+      </div>
+    </section>
   );
 };
 export default MyProfile;
