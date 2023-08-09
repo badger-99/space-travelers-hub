@@ -13,7 +13,7 @@ const Rockets = () => {
     if (rocketArray.length === 0) {
       dispatch(getRockets());
     }
-  }, []);
+  }, [dispatch, rocketArray]);
 
   if (isLoading) {
     return <h1 id="loading">Loading...</h1>;
