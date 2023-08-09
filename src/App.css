@@ -12,7 +12,7 @@ nav {
   align-items: center;
   padding: 1.5rem 2rem;
   border-bottom: 2px solid #e8e8e8;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 nav img {
@@ -93,6 +93,10 @@ li {
   border: 1.5px solid #868686;
 }
 
+#missions {
+  padding-bottom: 5rem;
+}
+
 table td,
 table th {
   border: 1px solid black;
@@ -105,13 +109,30 @@ table th {
 
 #my-profile {
   padding: 0 2rem;
+  justify-content: space-evenly;
 }
 
-#reservedRockets {
+.reservationDetails {
   padding: 0;
 }
 
-#reservedRockets li {
+.reservationDetails li {
   border: 1.5px solid #868686;
   padding: 1rem;
+  width: 35rem;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 4rem;
+  padding: 3rem 0 3rem 0;
+}
+
+#footer a {
+  color: #007bff;
+  text-decoration: none;
 }
