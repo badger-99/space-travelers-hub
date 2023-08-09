@@ -105,13 +105,15 @@ table th {
 
 #my-profile {
   padding: 0 2rem;
+  justify-content: space-evenly;
 }
 
-#reservedRockets {
+.reservationDetails {
   padding: 0;
 }
 
-#reservedRockets li {
+.reservationDetails li {
   border: 1.5px solid #868686;
   padding: 1rem;
+  width: 35rem;
 }

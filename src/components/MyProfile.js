@@ -12,30 +12,26 @@ const MyProfile = () => {
   const reservedRockets = rocketArray.filter((rocket) => rocket.isReserved);
 
   return (
-    <section id="my-profile">
-      <table>
-        <thead>
-          <tr>
-            <th>Mission Name</th>
-          </tr>
-        </thead>
-        <tbody>
+    <section id="my-profile" className="flexRow">
+      <div id="mission-name">
+        <h2>Mission Name</h2>
+        <ul className="reservationDetails">
           {reservedMissions.length > 0 ? (
             reservedMissions.map((mission) => (
-              <tr key={mission.mission_id}>
-                <td>{mission.mission_name}</td>
-              </tr>
+              <li key={mission.mission_id}>
+                {mission.mission_name}
+              </li>
             ))
           ) : (
-            <tr>
-              <td>No reserved missions</td>
-            </tr>
+            <li>
+              No reserved missions
+            </li>
           )}
-        </tbody>
-      </table>
+        </ul>
+      </div>
       <div id="my-rockets">
         <h2>My Rockets</h2>
-        <ul id="reservedRockets">
+        <ul className="reservationDetails">
           {reservedRockets.map((rocket) => (<li key={rocket.id}>{rocket.name}</li>))}
         </ul>
       </div>
