@@ -7,7 +7,7 @@ test('snapshot of Missions page', () => {
   const missionsList = render(
     <Provider store={store}>
       <Missions />
-    </Provider>
+    </Provider>,
   );
 
   expect(missionsList).toMatchSnapshot();
