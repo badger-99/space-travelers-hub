@@ -7,12 +7,12 @@ const MyProfile = () => {
     return reservedMissions;
   });
   const reservedMissions = useMemo(() => missions.filter((mission) => mission.reserved), [missions]);
-  
+
   const reservedRockets = useSelector((store) => {
     const rockets = store.rockets.filter((rocket) => rocket.isReserved);
     return rockets;
   });
-  
+
   return (
     <section id="my-profile">
       <table>
