@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h1><b>PokeFiles</b></h1>
+  <h1><b>Space Traveler's Hub</b></h1>
 
 </div>
 
@@ -61,7 +61,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]() - Coming Soon
+- [Live Demo Link](https://cosmic-missions.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
