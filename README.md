@@ -29,7 +29,7 @@
 
 # 📖 Space Traveler's Hub <a name="about-project"></a>
 
-**Space Traveler's Hub** is a service that allows a user interested in space work to choose a mission that fits their interests and to select a rocket that will transport them to and from the mission site... wherever in the cosmos it my be.
+**Space Traveler's Hub** is a service that allows a user interested in space work to choose a mission that fits their interests and to select a rocket that will transport them to and from the mission site... wherever in the cosmos it may be.
 
 ## 🛠 Built With <a name="built-with"></a>
 
