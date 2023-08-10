@@ -1,0 +1,138 @@
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 2px solid #e8e8e8;
+  margin-bottom: 1.5rem;
+}
+
+nav img {
+  width: 3.5rem;
+  margin-right: 1rem;
+}
+
+nav h1 {
+  font-size: 2rem;
+}
+
+.navLinks {
+  gap: 1rem;
+  margin-left: auto;
+}
+
+li {
+  list-style: none;
+}
+
+.link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+#profile {
+  padding-left: 1rem;
+  border-left: 3px solid #a6a6a6;
+}
+
+#rockets {
+  padding: 0 2rem 5rem;
+  gap: 2rem;
+}
+
+.rocket {
+  gap: 1rem;
+}
+
+.rocketPic img {
+  width: 17rem;
+}
+
+.details {
+  gap: 0.25rem;
+  max-width: 50rem;
+}
+
+.details button {
+  width: fit-content;
+  padding: 0.3rem;
+  border-radius: 5%;
+}
+
+.reserved {
+  color: #fff;
+  background: #0caaaa;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-right: 0.4rem;
+  padding: 0.2rem 0.3rem;
+  border-radius: 5%;
+}
+
+.reserveBtn {
+  background: #007bff;
+  color: white;
+  border: none;
+}
+
+.cancelBtn {
+  background: inherit;
+  color: #868686;
+  border: 1.5px solid #868686;
+}
+
+#missions {
+  padding-bottom: 5rem;
+}
+
+table td,
+table th {
+  border: 1px solid black;
+}
+
+.leave-button {
+  color: red;
+  border: 1px solid red;
+}
+
+#my-profile {
+  padding: 0 2rem;
+  justify-content: space-evenly;
+}
+
+.reservationDetails {
+  padding: 0;
+}
+
+.reservationDetails li {
+  border: 1.5px solid #868686;
+  padding: 1rem;
+  width: 35rem;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 4rem;
+  padding: 3rem 0 3rem 0;
+}
+
+#footer a {
+  color: #007bff;
+  text-decoration: none;
+}
